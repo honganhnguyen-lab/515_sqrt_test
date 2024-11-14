@@ -10,7 +10,11 @@ class SimpleSquareRootTest {
 	
     @Test
     void testMakeSqrt() {
-	assertEquals(0.0, SimpleSquareRootFunction.makeSqrt(1));
+
+        assertEquals(0.0, SimpleSquareRootFunction.makeSqrt(1));
+        assertEquals(0.0, SimpleSquareRootFunction.makeSqrt(-2));
+        assertEquals(0.0, SimpleSquareRootFunction.makeSqrt(-4));
+        assertEquals(0.0, SimpleSquareRootFunction.makeSqrt(10));
     }
 
     //@Disabled("Don't want to run this just yet")

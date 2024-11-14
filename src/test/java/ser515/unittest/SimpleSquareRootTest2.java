@@ -27,7 +27,9 @@ class SimpleSquareRootTest2 {
 	// we could then create different test methods for each equivalnce class whic iss OK.
 	assertAll("Combining all zero tests",
 		  () -> assertEquals(0.0, SimpleSquareRootFunction.makeSqrt(1), "Test for x=1"),   // x-1 = 0
-		  () -> assertEquals(0.0, SimpleSquareRootFunction.makeSqrt(-2), "Test for x=-2")  // x+2 = 0
+		  () -> assertEquals(0.0, SimpleSquareRootFunction.makeSqrt(-2), "Test for x=-2"), // x+2 = 0
+            () -> assertEquals(0.0, SimpleSquareRootFunction.makeSqrt(-10), "Test for x=-10"),  // x+10 = 0
+        () -> assertEquals(0.0, SimpleSquareRootFunction.makeSqrt(10), "Test for x=20")  // x-20 = 0
 		  );
     }
 
@@ -37,6 +39,7 @@ class SimpleSquareRootTest2 {
     @ParameterizedTest
     @ValueSource(ints = {1, -2})
     void testMakeSqrtZeroParam(int x) {
-	assertEquals(0.0, SimpleSquareRootFunction.makeSqrt(x));
+
+        assertEquals(0.0, SimpleSquareRootFunction.makeSqrt(x));
     }
 }
