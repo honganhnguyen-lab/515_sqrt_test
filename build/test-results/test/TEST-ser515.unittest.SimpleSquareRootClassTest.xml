@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="ser515.unittest.SimpleSquareRootClassTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2024-11-14T21:03:28" hostname="nguyens-mbp-2.dhcp.asu.edu" time="0.03">
+  <properties/>
+  <testcase name="testMakeSqrt()" classname="ser515.unittest.SimpleSquareRootClassTest" time="0.03"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
